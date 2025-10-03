@@ -302,7 +302,7 @@ public class Search extends Activity implements GrepView.Callback
                         is.close();
                         return true;
                     }
-                    encode = detector.getCharset();
+                    encode = detector.getDetectedCharset();
                     detector.reset();
                     detector.destroy();
                 }

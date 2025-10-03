@@ -116,7 +116,7 @@ public class TextViewer extends Activity implements OnItemLongClickListener , On
                             is.close();
                             return false;
                         }
-                        encode = detector.getCharset();
+                        encode = detector.getDetectedCharset();
                         is.reset();
                         detector.reset();
                         detector.destroy();
